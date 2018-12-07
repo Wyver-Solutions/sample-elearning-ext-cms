@@ -23,5 +23,4 @@ For example:
 
 [With gubbins](https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide)
 
-[Without gubbins]
-(https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide/chromeless:true)
+[Without gubbins](https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide/chromeless:true)
