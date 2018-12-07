@@ -21,10 +21,6 @@ The alternative is to display the content in an iframe, but then you'd end up wi
 
 For example:
 
-With gubbins:
+<a href="https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide">With gubbins</a>
 
-https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide
-
-Without gubbins:
-
-https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide/chromeless:true
+<a href="https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide/chromeless:true>Without gubbins</a>
