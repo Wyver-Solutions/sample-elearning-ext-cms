@@ -21,6 +21,7 @@ The alternative is to display the content in an iframe, but then you'd end up wi
 
 For example:
 
-(https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide)[With gubbins]
+[With gubbins](https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide)
 
-(https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide/chromeless:true)[Without gubbins]
+[Without gubbins]
+(https://demo.hibbittsdesign.org/grav-open-matter-course-hub/ux-techniques-guide/chromeless:true)
