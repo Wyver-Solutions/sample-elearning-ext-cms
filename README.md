@@ -5,6 +5,6 @@ Accessing via /elearning/index.html will take you to an "elearning" package. It 
 
 Help is provided by content stored in /cms/midi.html, which can also be accessed independently.
 
-## To Do
+Ideally the CMS would either be on the same domain as the elearning (to prevent Cross Origin Request issues).
 
-Test to see if the CMS content can come from a source on a different domain.
+Or the CMS could be set up on a server which allows Cross Origin Requests. That's OK for internal-only servers, but may be problematic for internet-facing servers.
