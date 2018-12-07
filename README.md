@@ -8,3 +8,7 @@ Help is provided by content stored in /cms/midi.html, which can also be accessed
 Ideally the CMS would either be on the same domain as the elearning (to prevent Cross Origin Request issues).
 
 Or the CMS could be set up on a server which allows Cross Origin Requests. That's OK for internal-only servers, but may be problematic for internet-facing servers.
+
+<a href="elearning/index.html">Open Elearning package</a>
+
+<a href="cms/midi.html">Open content management system</a>
