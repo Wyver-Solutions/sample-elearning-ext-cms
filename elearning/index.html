@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+
+		
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link type="text/css" rel="stylesheet" href="featherlight/release/featherlight.min.css" />
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script type="text/javascript">
+			function submitAnswer() {
+			  var radios = document.getElementsByName("choice");
+			  var i = 0, len = radios.length;
+			  var checked = false;
+			  var userAnswer;
+			  
+			  for( ; i < len; i++ ) {
+			     if(radios[i].checked) {
+			       checked = true;
+			       userAnswer = radios[i].value;
+			     }
+			  } 
+			  // if user click submit button without selecting any option, alert box should be say "please select choice answer".
+			  if(!checked) {
+			    alert("please select choice answer");
+			    return;
+			  }
+			  // Correct answer
+			  if(userAnswer === "Scripting") {
+			     alert("Answer is correct!");
+			  }
+			  // incorrect answer
+			  else {
+			     alert("Answer is wrong!");
+			  }
+			}
+		</script>
+		<style>
+		.container {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+		.checkmark {
+  position: absolute;
+  top: 20px;
+  left: -50px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Demonstration</h1>
+					<h2>Elearning with external content</h2>
+				</section>
+				<section>
+					<h2>What does the acronym "MIDI" mean?</h2>
+
+					<form style="text-align:left; float:left;">
+						<label class="container">
+						<input type="radio" class="checkmark" name="choice" value="Musical Instrument Digital Interface"> Musical Instrument Digital Interface<br />
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">
+						<input type="radio" class="checkmark" name="choice" value="Manual Intervention Dongle Interface"> Manual Intervention Dongle Interface<br />
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">
+						<input type="radio" class="checkmark" name="choice" value="Main Input Drive Implementation">Main Input Drive Implementation<br />
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">
+						<input type="radio" class="checkmark" name="choice" value="None of These"> None of These<br />
+						<span class="checkmark"></span>
+					</label>
+					</form>
+					<button class="button" onclick="submitAnswer()">Submit Answer</button>
+
+					<div>
+						
+						<a class="btn btn-default" href="../cms/midi.html #content" data-featherlight="ajax"><button class="button">Get help</button></a>
+					</div> 
+
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<script src="featherlight/assets/javascripts/jquery-1.7.0.min.js"></script>
+		<script src="featherlight/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
